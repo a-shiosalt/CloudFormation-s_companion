@@ -1,0 +1,11 @@
+Parameters:
+  myBucket1Name:
+    Type: String
+    AllowedPattern: '^[a-z0-9][a-z0-9-]+[a-z0-9]$'
+    MaxLength: 63
+Resources:
+  myS3Bucket1:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Ref: myBucket1Name

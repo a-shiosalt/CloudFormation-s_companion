@@ -1,0 +1,10 @@
+Resources:
+  myNestedS1:
+    Type: AWS::CloudFormation::Stack
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      TemplateURL: https://bucketnameXX.s3.Region.amazonaws.com/s.json
+      Parameters:
+        Deletedays: 10
+        RuleNameHead: Delete-Rule-10

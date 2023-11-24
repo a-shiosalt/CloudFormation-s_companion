@@ -1,0 +1,58 @@
+[
+    {
+        "ResourceType": "AWS::EC2::InternetGateway",
+        "LogicalResourceId": "EC2IntGW",
+        "ResourceIdentifier": {
+            "InternetGatewayId": "igw-0041ad8f38d1577a3"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+        "LogicalResourceId": "EC2SntRTAS1",
+        "ResourceIdentifier": {
+            "Id": "rtbassoc-0b1cba58dc1c5ce67"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+        "LogicalResourceId": "EC2SntRTAS2",
+        "ResourceIdentifier": {
+            "Id": "rtbassoc-084481bc1d4fc6a74"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::RouteTable",
+        "LogicalResourceId": "RTPrivate",
+        "ResourceIdentifier": {
+            "RouteTableId": "rtb-0268a004530402285"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::RouteTable",
+        "LogicalResourceId": "RTPublic",
+        "ResourceIdentifier": {
+            "RouteTableId": "rtb-08353fb6990875a72"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::Subnet",
+        "LogicalResourceId": "SubnetPrivate1",
+        "ResourceIdentifier": {
+            "SubnetId": "subnet-0a3022a4243483d46"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::Subnet",
+        "LogicalResourceId": "SubnetPublic1",
+        "ResourceIdentifier": {
+            "SubnetId": "subnet-021301f557719aaca"
+        }
+    },
+    {
+        "ResourceType": "AWS::EC2::VPC",
+        "LogicalResourceId": "myVPC",
+        "ResourceIdentifier": {
+            "VpcId": "vpc-00232effb5480ac49"
+        }
+    }
+]

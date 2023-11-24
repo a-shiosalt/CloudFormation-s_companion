@@ -1,0 +1,11 @@
+Parameters:
+  myBucketTagInfo:
+    Type: String
+Resources:
+  myS3BucketSubData:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      Tags:
+        - Key: Name
+          Value:
+            Ref: myBucketTagInfo

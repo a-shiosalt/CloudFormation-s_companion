@@ -1,0 +1,7 @@
+Resources:
+  myS3BucketSubData:
+    Type: AWS::S3::Bucket
+    Properties:
+      Tags:
+        - Key: Name
+          Value: 'sub-data-bucket'
